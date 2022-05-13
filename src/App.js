@@ -1,54 +1,40 @@
 import React, {useState} from 'react'; 
 import Nav from './Nav'; 
 import './App.css'; 
- 
-// modified code 
+import ItemPage from './ItemPage'; 
+import {items} from './static-data'; 
+
 const App = () => { 
-// existing code 
-const [activeTab, setActiveTab] = useState('items'); 
+const [activeTab, 
+setActiveTab] = useState('items'); 
+ 
 return ( 
 <div className="App"> 
-{/* modified code */} 
-<Nav 
-activeTab={activeTab} 
-onTabChange={setActiveTab} 
-/> 
-{/* existing code */} 
+<Nav activeTab={activeTab} onTabChange={setActiveTab}/> 
 <main className="App-content"> 
-<span>Empty</span> 
+<Content tab={activeTab}/> 
 </main> 
 </div> 
 ); 
+}; 
+ 
+
+const Content = ({tab}) => { 
+switch (tab) { 
+
+ 
+ 
+ 
+ 
+ case 'items': 
+
+return <ItemPage items={items}/>; 
+case 'cart': 
+return <span>the cart</span>; 
+default: 
+break; 
 } 
-// existing code 
+}; 
+ 
+
 export default App; 
-
-
-
-
-
-
-
-// import React from 'react'; 
-// import Nav from './Nav';
-// import './App.css'; 
-
-
-
-// class App extends React.Component{
-
-//   // constructor(){
-//   //   super();
-
-    
-//   // }
-
-//   render(){
-//     return(
-//      <Nav />
-      
-//     )
-//   }
-// }
-
-// export default App;
