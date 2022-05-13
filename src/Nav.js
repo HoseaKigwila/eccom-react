@@ -1,34 +1,64 @@
+
 import React from 'react'; 
+const Nav = () => { 
+return ( 
+<nav className="App-nav"> 
+<ul> 
+<li className="App-nav-item"> 
+<button>Items</button> 
+</li> 
+<li className="App-nav-item"> 
+<button>Cart</button> 
+</li> 
+</ul> 
+</nav> 
+) 
+} 
+ 
+export default Nav; 
 
 
 
 
-class Nav extends React.Component{
 
-    // constructor(){
-    //   super();
+
+
+
+
+
+
+
+// import React from 'react'; 
+
+
+
+
+// class Nav extends React.Component{
+
+//     // constructor(){
+//     //   super();
   
       
-    // }
+//     // }
   
-    render(){
-      return(
-        <nav className="App-nav"> 
-        <ul> 
-            <li className="App-nav-item"> 
-              <button>Items</button> 
-             </li> 
+//     render(){
+//       return(
+//         <nav className="App-nav"> 
+//         <ul> 
+//             <li className="App-nav-item"> 
+//               <button>Items</button> 
+//              </li> 
 
-            <li className="App-nav-item"> 
-                <button>Cart</button> 
-            </li> 
-        </ul> 
-        </nav> 
+//             <li className="App-nav-item"> 
+//                 <button>Cart</button> 
+//             </li> 
+//         </ul> 
+//         </nav> 
         
-      )
-    }
-  }
+//       )
+//     }
+//   }
 
 
 
-export default Nav;
+// export default Nav;
